@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: odh-kueue-controller
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/kueue/odh-kueue-controller@sha256:eaa56007adafe3fb8061471a64d71629f34656eb229443dd5c832ee78297ea72
         imagePullPolicy: Always
         name: container-image
         ports:
