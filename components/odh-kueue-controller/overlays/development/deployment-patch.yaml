@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-kueue-controller
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/kueue/odh-kueue-controller@sha256:eaa56007adafe3fb8061471a64d71629f34656eb229443dd5c832ee78297ea72
+        name: container-image
+        resources: {}
+status: {}
